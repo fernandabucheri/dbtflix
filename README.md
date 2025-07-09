@@ -43,7 +43,7 @@ Principais pontos:
 1. Clone este repositório:
    ```bash
    git clone https://github.com/fernandabucheri/dbtflix.git
-   cd dbt_movies_project
+   cd dbtflix
    ```
 
 2. Instale as dependências do dbt:
@@ -73,6 +73,8 @@ Principais pontos:
          schema: dbt_movies
    ```
    O `schema` `dbt_movies` será criado pelo dbt. Para o `path`, você pode usar `:memory:` para um banco de dados temporário que é apagado após cada sessão, ou especificar um caminho de arquivo para um banco de dados persistente (recomendado para manter seus dados transformados).
+
+
 
    Importante: o nome `dbt_movies_project` deve ser igual ao campo `profile`: que está no seu `dbt_project.yml`.
 
@@ -139,4 +141,3 @@ Principais pontos:
 
    - Local do notebook: `notebooks/demo_dbt_duckdb.ipynb`
    - Nele, há gráficos e tabelas que mostram o funcionamento das transformações e os insights do dataset.
-   
