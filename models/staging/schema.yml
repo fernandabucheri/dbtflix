@@ -1,0 +1,23 @@
+
+version: 2
+
+models:
+  - name: stg_movies
+    description: Staged data from the raw movies table
+    columns:
+      - name: movie_id
+        description: Primary key for movies
+        tests:
+          - unique
+          - not_null
+      - name: movie_title
+        description: The title of the movie
+      - name: movie_genre
+        description: The genre of the movie
+      - name: movie_release_year
+        description: The year the movie was released
+      - name: movie_rating
+        description: The rating of the movie
+
+
+
